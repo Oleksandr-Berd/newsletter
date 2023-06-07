@@ -7,7 +7,7 @@ import { lazy } from 'react';
 
 const MainPage = lazy(()=>import("./page/MainPage/MainPage"))
 
-function App() {
+const App: React.FC=()=> {
   return (
     <div className="App">
       <GlobalStyles />

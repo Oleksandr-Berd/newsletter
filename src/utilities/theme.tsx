@@ -63,6 +63,7 @@ const theme: object = {
   color: {
     primary: "hsl(4, 100%, 67%)",
     text: "#242742",
+    desktopBackground: "#36384D",
 
     dark: "hsl(234, 29%, 20%)",
     charcoal: "hsl(235, 18%, 26%)",
@@ -79,7 +80,7 @@ const theme: object = {
     historyBackground: "#DDE6F3",
   },
 
-  radius: ["4px", "8px", "12px", "16px", "20px", "50%"],
+  radius: ["4px", "8px", "12px", "16px", "20px", "36px", "50%"],
 };
 
 export default theme;

@@ -1,19 +1,28 @@
-
 import React from 'react';
+import { useMediaQuery } from '@mui/material';
+
 import * as SC from "./MainPageStyled"
 import Features from 'components/Features/Features';
 import FormSubmit from 'components/Form/Form';
+import Header from 'components/Header/Header';
 
 
-interface IProps{
-    handleSubmit:Function
+interface IProps {
+    handleSubmit: Function
 }
 
-const MainPage: React.FC<IProps> = ({handleSubmit}) => {
-   
+const MainPage: React.FC<IProps> = ({ handleSubmit }) => {
+
+    const isDesktop = useMediaQuery('(min-width: 1440px)');
+
     return (<SC.MainPage>
-        <Features />
-        <FormSubmit submit={handleSubmit} />
+        {isDesktop ? <>
+            <div><Features />
+                <FormSubmit submit={handleSubmit} /></div>
+            <Header />  
+        </> : <> <Features />
+            <FormSubmit submit={handleSubmit} /></>}
+
     </SC.MainPage>);
 }
 

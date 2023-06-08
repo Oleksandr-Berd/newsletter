@@ -4,7 +4,6 @@ import './App.css';
 import { GlobalStyles } from './utilities/GlobalStyles';
 import SharedLayout from './components/SharedLayout/SharedLayout';
 import { lazy, useState } from 'react';
-import { log } from 'console';
 
 const MainPage = lazy(() => import("./page/MainPage/MainPage"))
 const Success = lazy(() => import('components/Success/Success'))

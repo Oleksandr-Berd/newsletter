@@ -46,6 +46,8 @@ const theme: object = {
     S: "20px",
     N: "16px",
     XS: "14px",
+    XXS: "12px",
+
   },
 
   weight: {
@@ -60,6 +62,7 @@ const theme: object = {
 
   color: {
     primary: "hsl(4, 100%, 67%)",
+    text: "#242742",
 
     dark: "hsl(234, 29%, 20%)",
     charcoal: "hsl(235, 18%, 26%)",
@@ -67,7 +70,6 @@ const theme: object = {
     white: "hsl(0, 0%, 100%)",
 
     logo: "#000",
-    text: "#221754",
     background: "#EEEFF5",
     hover: "#4399FF",
     auth: "#1F2A50",

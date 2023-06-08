@@ -5,7 +5,9 @@ import { GlobalStyles } from './utilities/GlobalStyles';
 import SharedLayout from './components/SharedLayout/SharedLayout';
 import { lazy } from 'react';
 
-const MainPage = lazy(()=>import("./page/MainPage/MainPage"))
+const MainPage = lazy(() => import("./page/MainPage/MainPage"))
+
+
 
 const App: React.FC=()=> {
   return (

@@ -1,21 +1,18 @@
-import styled from "styled-components"
-
+import styled from "styled-components";
 
 export const Container = styled.div`
   padding-top: ${(props) => props.theme.space[9]};
-  padding-right: ${(props) => props.theme.space[6]};
-  padding-left: ${(props) => props.theme.space[6]};
 
   text-align: left;
 `;
 
 export const Title = styled.h2`
-margin-bottom: ${props => props.theme.space[6]};
+  margin-bottom: ${(props) => props.theme.space[6]};
 
-font-family: ${props => props.theme.fontFamily.text};
-font-weight: ${props => props.theme.weight.bold};
-font-size: ${props => props.theme.size.XXM};
-`
+  font-family: ${(props) => props.theme.fontFamily.text};
+  font-weight: ${(props) => props.theme.weight.bold};
+  font-size: ${(props) => props.theme.size.XXM};
+`;
 
 export const Text = styled.p`
   margin-bottom: ${(props) => props.theme.space[6]};

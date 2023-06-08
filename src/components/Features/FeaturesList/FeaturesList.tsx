@@ -1,6 +1,5 @@
 import React from 'react';
 
-import * as SC from "./FeaturesListStyled"
 
 import FeaturesItem from '../FeaturesItem/FeaturesItem';
 

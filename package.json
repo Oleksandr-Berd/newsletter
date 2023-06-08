@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@mui/styled-engine": "npm:@mui/styled-engine-sc@latest",
+    "@mui/material": "^5.13.4",
+    "@mui/styled-engine-sc": "^5.12.0",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^13.0.0",
     "@testing-library/user-event": "^13.2.1",
@@ -22,6 +25,9 @@
     "web-vitals": "^2.1.0",
     "yup": "^1.2.0"
   },
+ "resolutions": {
+  "@mui/styled-engine": "npm:@mui/styled-engine-sc@latest"
+},
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

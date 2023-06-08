@@ -6,17 +6,18 @@ import FormSubmit from 'components/Form/Form';
 import Modal from 'components/Modal/Modal';
 
 
-interface IProps {
-
-}
 
 
-const MainPage: React.FC<IProps> = () => {
-    const [email, setEmail] = useState("")
+const MainPage: React.FC = () => {
+    const [data, setData] = useState<string>('');
     const [isShowModal, setIsShowModal] = useState(false)
 
-    const handleSubmit = (value: string) => {
-        setEmail(value)
+    const handleSubmit = (value: { email:string}) => {
+        const { email } = value
+
+        console.log(email);
+        
+        setData(email)
         setIsShowModal(true)
     }
 
@@ -27,7 +28,7 @@ const MainPage: React.FC<IProps> = () => {
     return (<SC.MainPage>
         <Features />
         <FormSubmit submit={handleSubmit} />
-        {isShowModal && <Modal toggle={modalToggle} data={email} />}
+        {isShowModal && <Modal toggle={modalToggle} email={data} />}
     </SC.MainPage>);
 }
 

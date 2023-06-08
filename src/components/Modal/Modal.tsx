@@ -1,29 +1,38 @@
 import { createPortal } from "react-dom";
-
-import * as SC from './ModalStyled'
-
+import { ReactComponent as CheckModalSvg } from "assets/images/checkModal.svg";
+import * as SC from './ModalStyled';
 
 const modalRoot = document.querySelector("#modal-root")!;
 
-interface IProps{
-    toggle: Function;
-    data: string;
-}
+// interface IItem {
+//     data: string;
+//     toggle: Function;
+// }
 
+interface IProps {
+   
+    toggle: () => void;
+    email: string;
+};
 
-const Modal:React.FC<IProps> = ({toggle, data }) => {
-
+const Modal: React.FC<IProps> = ({ toggle, email }) => {
     const closeModal = () => {
-      toggle()
-  }
+        toggle();
+    };
 
     return createPortal(
         <SC.Overlay>
-            <SC.Modal>Modal</SC.Modal>
+            <SC.Modal>
+                <CheckModalSvg />
+                <h2>Thanks for subscribing!</h2>
+                <p>A confirmation email has been sent to</p>
+                <span>{email}</span>
+                <p> Please open it and click the button inside to confirm your subscription</p>
+            </SC.Modal>
             <button onClick={closeModal}></button>
         </SC.Overlay>,
-        modalRoot
+    modalRoot
     );
-}
+};
 
 export default Modal;

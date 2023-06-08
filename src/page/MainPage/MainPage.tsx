@@ -17,9 +17,9 @@ const MainPage: React.FC<IProps> = ({ handleSubmit }) => {
 
     return (<SC.MainPage>
         {isDesktop ? <>
-            <div><Features />
-                <FormSubmit submit={handleSubmit} /></div>
-            <Header />  
+            <SC.DeskContainer><Features />
+                <FormSubmit submit={handleSubmit} /></SC.DeskContainer>
+            <Header />
         </> : <> <Features />
             <FormSubmit submit={handleSubmit} /></>}
 

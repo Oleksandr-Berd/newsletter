@@ -17,7 +17,7 @@ export const Input = styled(Field)`
   padding-left: ${(props) => props.theme.space[6]};
   padding-top: ${(props) => props.theme.space[4]};
   padding-bottom: ${(props) => props.theme.space[4]};
-  margin-bottom: ${props => props.theme.space[6]};
+  margin-bottom: ${(props) => props.theme.space[6]};
 
   width: ${(props) => props.theme.percentage[9]};
 
@@ -26,6 +26,10 @@ export const Input = styled(Field)`
 
   border: 1px solid rgba(25, 24, 43, 0.25);
   border-radius: ${(props) => props.theme.radius[1]};
+
+  @media (min-width: 1440px) {
+    width: 85%;
+  }
 `;
 
 export const SubmitButton = styled.button`
@@ -43,5 +47,10 @@ export const SubmitButton = styled.button`
   line-height: 1.5;
   font-size: ${(props) => props.theme.size.N};
 
-  border-radius: ${props => props.theme.radius[1]};
+  border-radius: ${(props) => props.theme.radius[1]};
+
+  @media (min-width: 1440px) {
+    padding-left: 72px;
+    padding-right: 72px;
+  }
 `;

@@ -23,3 +23,7 @@ export const MainPage = styled.div`
     border-radius: ${props => props.theme.radius[5]};
   }
 `;
+
+export const DeskContainer = styled.div`
+  margin-right: 94px;
+`;

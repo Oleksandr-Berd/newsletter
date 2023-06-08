@@ -39,8 +39,9 @@ const theme: object = {
   },
 
   size: {
-    L: "72px",
-    XXM:"40px",
+    XL: "72px",
+    L: "56px",
+    XXM: "40px",
     XM: "36px",
     M: "24px",
     S: "20px",

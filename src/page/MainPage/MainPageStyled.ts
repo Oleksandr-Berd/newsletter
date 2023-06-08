@@ -25,5 +25,6 @@ export const MainPage = styled.div`
 `;
 
 export const DeskContainer = styled.div`
-  margin-right: 94px;
+width: 376px;
+  margin-right: 64px;
 `;

@@ -25,9 +25,10 @@ const App: React.FC = () => {
       <GlobalStyles />
       <Routes>
         <Route path='/' element={<SharedLayout />}>
-          <Route index element={<MainPage handleSubmit={handleSubmit} />} />   
+          <Route index element={<MainPage handleSubmit={handleSubmit} />} />  
+          <Route path='success' element={<Success email={data} />} />
         </Route>
-        <Route path='success' element={<Success email={data} />} />
+        
       </Routes>
     </div>
   );

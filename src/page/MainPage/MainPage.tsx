@@ -8,7 +8,7 @@ import Header from 'components/Header/Header';
 
 
 interface IProps {
-    handleSubmit: Function
+    handleSubmit: (value: { email: string })=>void
 }
 
 const MainPage: React.FC<IProps> = ({ handleSubmit }) => {

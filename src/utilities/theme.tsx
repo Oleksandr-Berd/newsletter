@@ -65,6 +65,7 @@ const theme: object = {
     primary: "hsl(4, 100%, 67%)",
     text: "#242742",
     desktopBackground: "#36384D",
+    valid: "#FF6155",
 
     dark: "hsl(234, 29%, 20%)",
     charcoal: "hsl(235, 18%, 26%)",

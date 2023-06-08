@@ -10,7 +10,7 @@ const theme: object = {
     "28px", //7
     "32px", //8
     "36px", //9
-    "48", //10
+    "48px", //10
     "64px", //11
     "128px", //12
     "160px", //13
@@ -40,6 +40,7 @@ const theme: object = {
 
   size: {
     L: "72px",
+    XXM:"40px",
     XM: "36px",
     M: "24px",
     S: "20px",
@@ -53,8 +54,8 @@ const theme: object = {
   },
 
   fontFamily: {
-    title: "Caveat", //substitute Museo Sans
-    text: "Montserrat", //substitute other fonts
+    title: "RobotoBold", //substitute Museo Sans
+    text: "RobotoRegular", //substitute other fonts
   },
 
   color: {

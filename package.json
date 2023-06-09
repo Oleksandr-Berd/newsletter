@@ -2,7 +2,6 @@
   "name": "newsletter",
   "version": "0.1.0",
   "private": true,
-  "build": "react-scripts build --output-path=build --basename=/newsletter --public-url=/newsletter/",
   "dependencies": {
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",

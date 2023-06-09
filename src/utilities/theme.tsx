@@ -82,7 +82,14 @@ const theme: object = {
     historyBackground: "#DDE6F3",
   },
 
-  radius: ["4px", "8px", "12px", "16px", "20px", "36px", "50%"],
+  radius: ["4px" //0
+    , "8px"//1
+    , "12px"//2
+    , "16px"//3
+    , "20px"//4
+    , "36px"//5
+    , "50%"//6
+  ],
 };
 
 export default theme;

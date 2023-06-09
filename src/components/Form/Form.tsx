@@ -4,7 +4,7 @@ import * as Yup from 'yup';
 import * as SC from "./FormStyled"
 
 interface IProps {
-    submit: (value: { email: string })=>void;
+    submit: (value: { email: string }) => void;
 }
 
 
@@ -16,15 +16,15 @@ const SignupSchema = Yup.object().shape({
 
 export const FormSubmit: React.FC<IProps> = ({ submit }) => {
 
-    return (<div>
+    return (
         <Formik
 
             initialValues={{
                 email: '',
             }}
             validationSchema={SignupSchema}
-        
-            onSubmit={(values, {resetForm}) => {
+
+            onSubmit={(values, { resetForm }) => {
                 submit(values)
                 resetForm({
                     values: {
@@ -43,16 +43,12 @@ export const FormSubmit: React.FC<IProps> = ({ submit }) => {
                         {errors.email && touched.email ? <SC.Error>{errors.email}</SC.Error> : null}
                     </SC.LabelContainer>
                     <SC.Input name="email" type="email" placeholder="email@company.com" errorStatus={errors.email ? "error" : undefined} />
-                    
+
                     <SC.SubmitButton type="submit" >Subscribe to monthly newsletter</SC.SubmitButton>
                 </SC.CustomForm>
             )}
         </Formik>
-    </div>)
+   )
 }
-
-
-
-
 
 export default FormSubmit

@@ -6,11 +6,11 @@ interface IProps {
     text: string;
 }
 
-const FeaturesItem: React.FC<IProps> = ({text}) => {
-    return (<SC.Item>
-        <CheckSVG />
-        <SC.Text>{text}</SC.Text>
-        </SC.Item>);
-}
- 
+const FeaturesItem: React.FC<IProps> = ({ text }) =>
+(<SC.Item>
+    <CheckSVG />
+    <SC.Text>{text}</SC.Text>
+</SC.Item>);
+
+
 export default FeaturesItem;

@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 
 import * as SC from "./SuccessStyled"
 interface IProps {
-    email: string;
+    email: string | null; 
 };
 
 
@@ -19,7 +19,9 @@ const Success: React.FC<IProps> = ({email}) => {
         navigate("/")
     };
 
-    return (<SC.SuccessPage>
+    return (
+        <SC.PageContainer>
+        <SC.SuccessPage>
         
             <SC.TextContainer>
                 <CheckModalSvg />
@@ -30,7 +32,9 @@ const Success: React.FC<IProps> = ({email}) => {
             </SC.TextContainer>
         <SC.DismissButton onClick={dismiss}>Dismiss message</SC.DismissButton>
         
-    </SC.SuccessPage> );
+            </SC.SuccessPage>
+        </SC.PageContainer>
+    )
 }
  
 export default Success;

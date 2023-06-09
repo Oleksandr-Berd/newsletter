@@ -3,7 +3,7 @@
   "homepage": "https://oleksandr-berd.github.io/newsletter/",
   "version": "0.1.0",
   "private": true,
-  "build": "react-scripts build --basename /newsletter",
+  "build": "react-scripts build --output-path=build --basename=/newsletter --public-url=/newsletter/",
   "dependencies": {
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
@@ -34,7 +34,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build --output-path=build --basename=/newsletter --public-url=/newsletter/",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

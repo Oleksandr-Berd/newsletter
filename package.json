@@ -1,6 +1,5 @@
 {
   "name": "newsletter",
-  "homepage": "https://oleksandr-berd.github.io/newsletter/",
   "version": "0.1.0",
   "private": true,
   "build": "react-scripts build --output-path=build --basename=/newsletter --public-url=/newsletter/",
